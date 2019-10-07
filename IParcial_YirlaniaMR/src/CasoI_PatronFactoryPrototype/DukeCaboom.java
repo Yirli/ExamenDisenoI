@@ -5,12 +5,9 @@
  */
 package CasoI_PatronFactoryPrototype;
 
-/**
- *
- * @author sebastianmejiasrodriguez
- */
-public class DukeCaboom implements JuguetePrototype, Cloneable{
 
+public class DukeCaboom implements JuguetePrototype, Cloneable{
+    private int id;
     public DukeCaboom() {
     }
 
@@ -31,6 +28,14 @@ public class DukeCaboom implements JuguetePrototype, Cloneable{
         } catch (CloneNotSupportedException ex) {
             return null;
         }
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
     
     

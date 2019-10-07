@@ -5,12 +5,9 @@
  */
 package CasoI_PatronFactoryPrototype;
 
-/**
- *
- * @author sebastianmejiasrodriguez
- */
 public class BoBeep implements JuguetePrototype, Cloneable{
-
+    private int id;
+    
     public BoBeep() {
     }
 
@@ -31,6 +28,14 @@ public class BoBeep implements JuguetePrototype, Cloneable{
         } catch (CloneNotSupportedException ex) {
             return null;
         }
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
     }
     
     

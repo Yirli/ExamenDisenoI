@@ -16,7 +16,8 @@ public class AsciiBuilder extends FormatoBuilder{
     
    @Override
     public void mainParser() {
-        System.out.println("Ascii");
+        System.out.println("");
+        System.out.println("Formato de Salida: Ascii");
         formato.mainParser('a');
     }
 
@@ -41,7 +42,8 @@ public class AsciiBuilder extends FormatoBuilder{
 
     @Override
     public void write() {
-        System.out.println("Ascii");
+        System.out.println("");
+        System.out.println("Formato de Salida: Ascii");
         formato.write("1");
     }
     

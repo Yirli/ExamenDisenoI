@@ -11,6 +11,15 @@ import java.io.File;
 public abstract class FormatoBuilder {
     protected Formato formato;
 
+    public FormatoBuilder(Formato formato) {
+        this.formato = formato;
+    }
+
+    public FormatoBuilder() {
+    }
+
+    
+    
     public Formato getFormato() {
         return formato;
     }
@@ -20,9 +29,10 @@ public abstract class FormatoBuilder {
     }
     
     public char scanner(){
-        System.out.println("leyendo y reconociendo tokens");
+        System.out.println("Paso 1: leyendo y reconociendo tokens");
         return 't';
     }
+    
     public abstract void mainParser();
     public abstract String escapePagParser();
     public abstract String textoParser();

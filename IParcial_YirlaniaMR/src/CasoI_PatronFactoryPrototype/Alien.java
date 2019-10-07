@@ -7,7 +7,9 @@ package CasoI_PatronFactoryPrototype;
 
 
 public class Alien implements JuguetePrototype, Cloneable{
-
+    
+    private int id;
+    
     public Alien() {
     }
 
@@ -28,6 +30,14 @@ public class Alien implements JuguetePrototype, Cloneable{
         } catch (CloneNotSupportedException ex) {
             return null;
         }
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
     }
     
     

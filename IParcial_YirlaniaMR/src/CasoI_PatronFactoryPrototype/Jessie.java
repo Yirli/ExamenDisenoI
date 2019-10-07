@@ -7,7 +7,9 @@ package CasoI_PatronFactoryPrototype;
 
 
 public class Jessie implements JuguetePrototype, Cloneable{
-
+    
+    private int id;
+    
     public Jessie() {
     }
     
@@ -29,6 +31,14 @@ public class Jessie implements JuguetePrototype, Cloneable{
         } catch (CloneNotSupportedException ex) {
             return null;
         }
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
     
 }

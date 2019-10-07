@@ -5,11 +5,9 @@
  */
 package CasoI_PatronFactoryPrototype;
 
-/**
- *
- * @author sebastianmejiasrodriguez
- */
 public class Rex implements JuguetePrototype, Cloneable{
+    private int id;
+    
     Rex(){}
 
     @Override
@@ -30,6 +28,14 @@ public class Rex implements JuguetePrototype, Cloneable{
             return null;
         
         }  
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
     
 }

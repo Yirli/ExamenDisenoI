@@ -5,41 +5,39 @@
  */
 package CasoIII_PatronBuilder;
 
-/**
- *
- * @author jupi
- */
 public class PdfBuilder extends FormatoBuilder{
     
 
     @Override
     public void mainParser() {
-        System.out.println("PDF");
+        System.out.println("");
+        System.out.println("Formato de Salida: PDF");
         formato.mainParser('a');
     }
 
     @Override
     public String escapePagParser() {
-        System.out.println("PDF");
+  
         return formato.escapePagParser('a');
         
     }
 
     @Override
     public String textoParser() {
-        System.out.println("PDF");
+        
         return formato.textoParser('a');
     }
 
     @Override
     public String escapeUniParser() {
-        System.out.println("PDF");
+        
         return formato.escapeUniParser('a');
     }
 
     @Override
     public void write() {
-        System.out.println("PDF");
+        System.out.println("");
+        System.out.println("Formato de Salida: PDF");
         formato.write("1");
     }
 }

@@ -13,32 +13,34 @@ public class EpubBuilder extends FormatoBuilder{
 
    @Override
     public void mainParser() {
-        System.out.println("Epub");
+        System.out.println("");
+        System.out.println("Formato de Salida: EPUB");
         formato.mainParser('a');
     }
 
     @Override
     public String escapePagParser() {
-        System.out.println("Epub");
+        
         return formato.escapePagParser('a');
         
     }
 
     @Override
     public String textoParser() {
-        System.out.println("Epub");
+        
         return formato.textoParser('a');
     }
 
     @Override
     public String escapeUniParser() {
-        System.out.println("Epub");
+        
         return formato.escapeUniParser('a');
     }
 
     @Override
     public void write() {
-        System.out.println("Epub");
+        System.out.println("");
+        System.out.println("Formato de Salida: EPUB");
         formato.write("1");
     }
     

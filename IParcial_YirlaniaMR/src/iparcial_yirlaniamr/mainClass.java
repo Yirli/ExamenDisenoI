@@ -28,14 +28,14 @@ public class mainClass {
        System.out.println("Caso 1: Juguetes Toy Story 4");
        
        JugueteFactory jf = new JugueteFactory();
-       JuguetePrototype woody = jf.fabricarJuguete(0);
-       woody.sonido();
-        
+       Woody woody = (Woody)jf.fabricarJuguete(0);
+       woody.setId(1);
+       System.out.println("Woody numero: "+ woody.getId());
         //Clonar a woody
-        JuguetePrototype woody2 = woody.clonar();
-        System.out.print("Soy una copia de woody, ");
-        woody2.sonido();
-       System.out.println("------------------------------");
+        Woody woody2 = (Woody)woody.clonar();
+        woody2.setId(2);
+        System.out.println("Woody numero: "+ woody2.getId());
+        System.out.println("------------------------------");
         
        
         //Segundo Ejercicio
@@ -55,8 +55,10 @@ public class mainClass {
         System.out.println("Caso 3: RTF");
   
         Director_2 dir = new Director_2();
-        dir.setFormatoBuilder(new EpubBuilder());
-        //FormatoBuilder fb = new EpubBuilder();
+        
+        FormatoBuilder fb = new EpubBuilder();
+        dir.setFormatoBuilder(fb);
+        dir.construirFormato();
         
 
         System.out.println("------------------------------");

@@ -5,15 +5,12 @@
  */
 package CasoI_PatronFactoryPrototype;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
-/**
- *
- * @author sebastianmejiasrodriguez
- */
+
 public class Woody implements JuguetePrototype, Cloneable{
 
+    private int id;
+    
     public Woody() {
     }
 
@@ -34,6 +31,14 @@ public class Woody implements JuguetePrototype, Cloneable{
         } catch (CloneNotSupportedException ex) {
             return null;
         }
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
     }
     
     

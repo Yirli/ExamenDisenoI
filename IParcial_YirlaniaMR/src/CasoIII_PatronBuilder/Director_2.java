@@ -10,13 +10,13 @@ public class Director_2 {
     private FormatoBuilder formatoBuilder;
     
     public void construirFormato(){
+        formatoBuilder.createNewFormato();
         formatoBuilder.scanner();
         formatoBuilder.mainParser();
         formatoBuilder.write();
     }
     
     public void setFormatoBuilder(FormatoBuilder fb){
-        System.out.println("aqui");
         this.formatoBuilder = fb;
     }
     

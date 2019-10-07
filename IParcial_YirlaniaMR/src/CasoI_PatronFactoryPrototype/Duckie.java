@@ -5,12 +5,9 @@
  */
 package CasoI_PatronFactoryPrototype;
 
-/**
- *
- * @author sebastianmejiasrodriguez
- */
 public class Duckie implements JuguetePrototype, Cloneable{
-
+    
+    private int id;
     public Duckie() {
     }
 
@@ -31,6 +28,14 @@ public class Duckie implements JuguetePrototype, Cloneable{
         } catch (CloneNotSupportedException ex) {
             return null;
         }
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
     
     
